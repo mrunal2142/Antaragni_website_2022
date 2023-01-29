@@ -28,11 +28,6 @@ a:focus {
   text-decoration: none;
 }
 
-p {
-  padding: 0;
-  margin: 0 0 30px 0;
-}
-
 h1,
 h2,
 h3,
@@ -109,7 +104,7 @@ h6 {
 }
 
 .section-header::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 60px;
@@ -137,7 +132,7 @@ h6 {
 }
 
 .section-with-bg {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -157,7 +152,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-fixed {
-  background: rgba(6, 12, 34, 0.98);
+  background: rgba(6, 12, 34, 0.7);
   height: 70px;
   padding: 15px 0;
   transition: all 0.5s;
@@ -469,11 +464,38 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url(../img/coverPhoto.jpg) top center;
+  background: url(../img/coverPage.png) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
-} 
+}
+
+#antaragniWord {
+  font-family: "Berkshire Swash", cursive !important;
+  font-size: 180px !important;
+}
+
+@media (max-width:375px) {
+  #antaragniWord {
+    font-family: "Berkshire Swash", cursive !important;
+    font-size: 50px !important;
+  }
+
+  #clgName {
+    width: 45rem  !important;
+  }
+}
+
+@media (max-width: 770px) and (min-width: 380px) {
+  #antaragniWord {
+    font-family: "Berkshire Swash", cursive !important;
+    font-size: 75px !important;
+    
+  }
+  #clgName {
+    width: 75rem !important;
+  }
+}
 
 #intro:before {
   content: "";
@@ -522,8 +544,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro p {
   color: #ebebeb;
-  font-weight: 700;
-  font-size: 20px;
 }
 
 #intro .play-btn {
@@ -537,7 +557,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -553,7 +573,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 120px;
   height: 120px;
@@ -582,7 +602,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn:hover::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -655,7 +675,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
- 
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -663,7 +682,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 60px 0 40px 0;
 }
 
-.abtext{
+.abtext {
   color: #000 !important;
 }
 
@@ -837,7 +856,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .tab-pane {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
 #schedule .schedule-item {
@@ -1221,7 +1240,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #buy-tickets .card {
   border: none;
   border-radius: 5px;
-  transition: all  0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
 }
 
@@ -1349,7 +1368,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #f82249;
   display: none;
   /*border: 1px solid red;*/
-   border: 1px solid #f82249;
+  border: 1px solid #f82249;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1665,8 +1684,3 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 10px;
   }
 }
-
-
-
-
-
