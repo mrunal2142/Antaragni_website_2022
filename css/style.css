@@ -180,7 +180,7 @@ h6 {
 
 #header #logo img {
   padding: 0;
-  margin: 0;
+  padding-bottom: 0.2rem;
   /*max-height: auto;*/
 }
 
@@ -439,7 +439,7 @@ h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(6, 12, 34, 0.8);
+  background: rgba(6, 12, 34, 0.95);
   display: none;
 }
 
@@ -475,14 +475,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 180px !important;
 }
 
-@media (max-width:375px) {
+@media (max-width: 375px) {
   #antaragniWord {
     font-family: "Berkshire Swash", cursive !important;
     font-size: 50px !important;
   }
 
   #clgName {
-    width: 45rem  !important;
+    width: 45rem !important;
   }
 }
 
@@ -490,7 +490,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   #antaragniWord {
     font-family: "Berkshire Swash", cursive !important;
     font-size: 75px !important;
-    
   }
   #clgName {
     width: 75rem !important;
