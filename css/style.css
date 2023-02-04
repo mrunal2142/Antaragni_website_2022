@@ -463,11 +463,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro {
   width: 100%;
-  height: 100vh;
+  height: 100vh !important;
   background: url(../img/coverPage.png) top center;
   background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
+}
+
+#intro .timer__container {
+  display: flex;
+  justify-content: center;
+}
+
+#clgName {
+  width: 190% !important;
+  max-width: 100rem;
 }
 
 #antaragniWord {
@@ -480,20 +491,56 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-family: "Berkshire Swash", cursive !important;
     font-size: 50px !important;
   }
-
-  #clgName {
-    width: 45rem !important;
+  #intro .day {
+    font-size: 30px !important;
+  }
+  #intro .hour {
+    font-size: 30px !important;
+  }
+  #intro .min {
+    font-size: 30px !important;
+  }
+  #intro .sec {
+    font-size: 30px !important;
   }
 }
 
-@media (max-width: 770px) and (min-width: 380px) {
+@media (max-width: 770px) and (min-width: 376px) {
   #antaragniWord {
     font-family: "Berkshire Swash", cursive !important;
     font-size: 75px !important;
   }
-  #clgName {
-    width: 75rem !important;
+  #intro .day {
+    font-size: 45px !important;
   }
+  #intro .hour {
+    font-size: 45px !important;
+  }
+  #intro .min {
+    font-size: 45px !important;
+  }
+  #intro .sec {
+    font-size: 45px !important;
+  }
+}
+
+@media (min-width: 770px) {
+  #antaragniWord {
+    font-family: "Berkshire Swash", cursive !important;
+    font-size: 150px !important;
+  }
+  /* #intro .day {
+    font-size: 45px !important;
+  }
+  #intro .hour {
+    font-size: 45px !important;
+  }
+  #intro .min {
+    font-size: 45px !important;
+  }
+  #intro .sec {
+    font-size: 45px !important;
+  } */
 }
 
 #intro:before {
@@ -710,7 +757,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about p {
-  font-size: 14px;
+  font-size: 20px !important;
   margin-bottom: 20px;
   color: #fff;
 }
@@ -843,7 +890,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #f82249;
+  background-color: #A973BD;
   color: #fff;
 }
 
