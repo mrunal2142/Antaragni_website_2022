@@ -757,7 +757,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about p {
-  font-size: 14px;
+  font-size: 20px !important;
   margin-bottom: 20px;
   color: #fff;
 }
@@ -890,7 +890,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #f82249;
+  background-color: #A973BD;
   color: #fff;
 }
 
