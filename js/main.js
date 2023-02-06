@@ -1,3 +1,6 @@
+let timer_id = 0;
+document.getElementById("__confetti").style.display = "none";
+
 jQuery(document).ready(function ($) {
   // Back to top button
   $(window).scroll(function () {
@@ -159,7 +162,8 @@ jQuery(document).ready(function ($) {
 
   // custom code
   const countDown = () => {
-    const countDate = new Date("February 23, 2023 00:00:00").getTime();
+    const countDate = new Date("February 06, 2023 16:08:00").getTime();
+    // const countDate = new Date("February 01, 2023 00:00:00").getTime();
     const currentTime = new Date().getTime();
     const gap = countDate - currentTime;
 
@@ -168,21 +172,34 @@ jQuery(document).ready(function ($) {
     const hour = minute * 60;
     const day = hour * 24;
 
+    if (currentTime >= countDate) {
+      clearInterval(timer_id);
+      document.getElementById("__clgName").style.display = "block";
+      document.querySelector(".timer__container").style.display = "none";
+
+      if (currentTime - countDate <= 5 * 60 * 1000) {
+        document.getElementById("__confetti").style.display = "block";
+
+        setTimeout(() => {
+          document.getElementById("__confetti").style.height = "0px";
+        }, 5000);
+      }
+    }
+
     let textDay = Math.floor(gap / day);
     let textHour = Math.floor((gap % day) / hour);
     let textMinute = Math.floor((gap % hour) / minute);
     let textSecond = Math.floor((gap % minute) / second);
-    
+
     textDay = textDay < 10 ? "0" + textDay : textDay;
     textHour = textHour < 10 ? "0" + textHour : textHour;
     textMinute = textMinute < 10 ? "0" + textMinute : textMinute;
     textSecond = textSecond < 10 ? "0" + textSecond : textSecond;
-
     document.querySelector(".day").innerText = textDay;
     document.querySelector(".hour").innerText = textHour;
     document.querySelector(".min").innerText = textMinute;
     document.querySelector(".sec").innerText = textSecond;
   };
 
-  setInterval(countDown, 1000);
+  timer_id = setInterval(countDown, 1000);
 });
