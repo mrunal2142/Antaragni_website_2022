@@ -1,7 +1,18 @@
-let timer_id = 0;
-document.getElementById("__confetti").style.display = "none";
-
 jQuery(document).ready(function ($) {
+  let timer_id = 0;
+  const conft = document.getElementById("__confetti");
+  const LetsCelebImage = document.getElementById("__LetsCelebrate");
+  const timerContainer = document.querySelector(".timer__container");
+  const _Day = document.querySelector(".day");
+  const _Hour = document.querySelector(".hour");
+  const _Min = document.querySelector(".min");
+  const _Sec = document.querySelector(".sec");
+
+  // since we are using the same function for both the timer and the confetti
+  if (conft) {
+    conft.style.display = "none";
+  }
+
   // Back to top button
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
@@ -162,8 +173,8 @@ jQuery(document).ready(function ($) {
 
   // custom code
   const countDown = () => {
-    const countDate = new Date("February 06, 2023 16:08:00").getTime();
-    // const countDate = new Date("February 01, 2023 00:00:00").getTime();
+    const countDate = new Date("February 23, 2023 00:00:00").getTime();
+    // const countDate = new Date("February 07, 2023 15:13:00").getTime();
     const currentTime = new Date().getTime();
     const gap = countDate - currentTime;
 
@@ -174,31 +185,41 @@ jQuery(document).ready(function ($) {
 
     if (currentTime >= countDate) {
       clearInterval(timer_id);
-      document.getElementById("__clgName").style.display = "block";
-      document.querySelector(".timer__container").style.display = "none";
+      LetsCelebImage.style.display = "block";
+      timerContainer.style.display = "none";
 
       if (currentTime - countDate <= 5 * 60 * 1000) {
-        document.getElementById("__confetti").style.display = "block";
+        console.log(conft)
+        conft.style.display = "block";
 
         setTimeout(() => {
-          document.getElementById("__confetti").style.height = "0px";
+          conft.style.height = "0px";
         }, 5000);
       }
+      return;
     }
 
+    // since we are using the same timer for multiple elements, we are using the id of the element to get the element and set the value
+    // if the element is not present, we are returning from the function
+    if (!_Day || !_Hour || !_Min || !_Sec) return;
+
+    //calculating the values for days, hours, minutes and seconds
     let textDay = Math.floor(gap / day);
     let textHour = Math.floor((gap % day) / hour);
     let textMinute = Math.floor((gap % hour) / minute);
     let textSecond = Math.floor((gap % minute) / second);
 
+    //prepending 0 if value is less than 10
     textDay = textDay < 10 ? "0" + textDay : textDay;
     textHour = textHour < 10 ? "0" + textHour : textHour;
     textMinute = textMinute < 10 ? "0" + textMinute : textMinute;
     textSecond = textSecond < 10 ? "0" + textSecond : textSecond;
-    document.querySelector(".day").innerText = textDay;
-    document.querySelector(".hour").innerText = textHour;
-    document.querySelector(".min").innerText = textMinute;
-    document.querySelector(".sec").innerText = textSecond;
+
+    //setting the values to the timer per second
+    _Day.innerText = textDay;
+    _Hour.innerText = textHour;
+    _Min.innerText = textMinute;
+    _Sec.innerText = textSecond;
   };
 
   timer_id = setInterval(countDown, 1000);
