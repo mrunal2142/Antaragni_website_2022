@@ -464,11 +464,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh !important;
-  background: url(../img/coverPage.png) top center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: transparent;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  z-index: 100;
 }
 
 #intro .timer__container {
@@ -1735,4 +1734,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 .Center {
   justify-content: center;
   display: flex;
+}
+
+.carousel-item{
+  float:none; 
+  transition: 0s !important;
 }
