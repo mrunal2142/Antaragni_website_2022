@@ -1,3 +1,13 @@
+
+var _firstName = document.getElementById("_firstName");
+var _lastName = document.getElementById("_lastName");
+var _email = document.getElementById("_email");
+var _collegeStatus = document.getElementById("_collegeStatus");
+var _aadharNumber = document.getElementById("_aadharNumber");
+var _phoneNumber = document.getElementById("_phoneNumber");
+var _mainEvent = document.getElementById("_mainEvent");
+var _SubEvent = document.getElementById("_SubEvent");
+
 jQuery(document).ready(function ($) {
   // Back to top button
   $(window).scroll(function () {
@@ -97,7 +107,7 @@ jQuery(document).ready(function ($) {
   $(".nav-menu a, #mobile-nav a, .scrollto").on("click", function () {
     if (
       location.pathname.replace(/^\//, "") ==
-        this.pathname.replace(/^\//, "") &&
+      this.pathname.replace(/^\//, "") &&
       location.hostname == this.hostname
     ) {
       var target = $(this.hash);
@@ -172,7 +182,7 @@ jQuery(document).ready(function ($) {
     let textHour = Math.floor((gap % day) / hour);
     let textMinute = Math.floor((gap % hour) / minute);
     let textSecond = Math.floor((gap % minute) / second);
-    
+
     textDay = textDay < 10 ? "0" + textDay : textDay;
     textHour = textHour < 10 ? "0" + textHour : textHour;
     textMinute = textMinute < 10 ? "0" + textMinute : textMinute;
@@ -186,3 +196,4 @@ jQuery(document).ready(function ($) {
 
   setInterval(countDown, 1000);
 });
+
