@@ -210,12 +210,12 @@ h6 {
   white-space: nowrap;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   float: left;
 }
 
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
   display: block;
 }
 
@@ -272,11 +272,11 @@ h6 {
   color: #fff;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   margin-left: 8px;
 }
 
-.nav-menu > li > a:before {
+.nav-menu>li>a:before {
   content: "";
   position: absolute;
   width: 0;
@@ -289,8 +289,8 @@ h6 {
 }
 
 .nav-menu a:hover:before,
-.nav-menu li:hover > a:before,
-.nav-menu .menu-active > a:before {
+.nav-menu li:hover>a:before,
+.nav-menu .menu-active>a:before {
   visibility: visible;
   width: 100%;
 }
@@ -340,7 +340,7 @@ h6 {
   border-radius: 3px;
 }
 
-.nav-menu ul li:hover > a {
+.nav-menu ul li:hover>a {
   background: #f82249;
   color: #fff;
 }
@@ -465,8 +465,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 100%;
   height: 100vh !important;
   background: transparent;
-  overflow: hidden;
   position: absolute;
+  overflow: hidden;
   z-index: 100;
 }
 
@@ -475,10 +475,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   justify-content: center;
 }
 
-#clgName {
-  width: 190% !important;
-  max-width: 100rem;
-}
 
 #antaragniWord {
   font-family: "Berkshire Swash", cursive !important;
@@ -490,15 +486,33 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-family: "Berkshire Swash", cursive !important;
     font-size: 50px !important;
   }
+
+  #clgName {
+    width: 100% !important;
+    max-width: 100rem;
+  }
+
+  #letsCeleb {
+    width: 190% !important;
+    max-width: 100rem;
+  }
+
+  .collegelogo{
+    width: 20vw;
+  }
+
   #intro .day {
     font-size: 30px !important;
   }
+
   #intro .hour {
     font-size: 30px !important;
   }
+
   #intro .min {
     font-size: 30px !important;
   }
+
   #intro .sec {
     font-size: 30px !important;
   }
@@ -509,6 +523,60 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-family: "Berkshire Swash", cursive !important;
     font-size: 75px !important;
   }
+
+  .collegelogo{
+    width: 20vw;
+  }
+
+  #clgName {
+    width: 190% !important;
+    max-width: 100rem;
+  }
+
+  #letsCeleb {
+    width: 190% !important;
+    max-width: 100rem;
+  }
+
+  #intro .day {
+    font-size: 45px !important;
+  }
+
+  #intro .hour {
+    font-size: 45px !important;
+  }
+
+  #intro .min {
+    font-size: 45px !important;
+  }
+
+  #intro .sec {
+    font-size: 45px !important;
+  }
+}
+
+@media (min-width: 770px) {
+  #antaragniWord {
+    font-family: "Berkshire Swash", cursive !important;
+    font-size: 18vh !important;
+  }
+
+  #clgName{
+    height: 14vh !important;
+  }
+
+  #letsCeleb{
+    height: 12vh;
+  }
+
+  .collegelogo{
+    height: 15vh !important;
+  }
+
+  .marqueClass{
+    color: #ffffff; 
+    width: 80vw
+  }
   #intro .day {
     font-size: 45px !important;
   }
@@ -521,25 +589,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   #intro .sec {
     font-size: 45px !important;
   }
-}
-
-@media (min-width: 770px) {
-  #antaragniWord {
-    font-family: "Berkshire Swash", cursive !important;
-    font-size: 150px !important;
-  }
-  /* #intro .day {
-    font-size: 45px !important;
-  }
-  #intro .hour {
-    font-size: 45px !important;
-  }
-  #intro .min {
-    font-size: 45px !important;
-  }
-  #intro .sec {
-    font-size: 45px !important;
-  } */
 }
 
 #intro:before {
@@ -1617,6 +1666,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (min-width: 768px) {
+
   #contact .contact-address,
   #contact .contact-phone,
   #contact .contact-email {
@@ -1735,4 +1785,3 @@ body.mobile-nav-active #mobile-nav-toggle {
   justify-content: center;
   display: flex;
 }
-
