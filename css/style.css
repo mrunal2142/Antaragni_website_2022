@@ -1736,7 +1736,3 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: flex;
 }
 
-.carousel-item{
-  float:none; 
-  transition: 0s !important;
-}
