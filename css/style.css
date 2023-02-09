@@ -28,11 +28,6 @@ a:focus {
   text-decoration: none;
 }
 
-p {
-  padding: 0;
-  margin: 0 0 30px 0;
-}
-
 h1,
 h2,
 h3,
@@ -109,7 +104,7 @@ h6 {
 }
 
 .section-header::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 60px;
@@ -137,7 +132,7 @@ h6 {
 }
 
 .section-with-bg {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -157,7 +152,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-fixed {
-  background: rgba(6, 12, 34, 0.98);
+  background: rgba(6, 12, 34, 0.7);
   height: 70px;
   padding: 15px 0;
   transition: all 0.5s;
@@ -185,7 +180,7 @@ h6 {
 
 #header #logo img {
   padding: 0;
-  margin: 0;
+  padding-bottom: 0.2rem;
   /*max-height: auto;*/
 }
 
@@ -444,7 +439,7 @@ h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(6, 12, 34, 0.8);
+  background: rgba(6, 12, 34, 0.95);
   display: none;
 }
 
@@ -468,12 +463,84 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro {
   width: 100%;
-  height: 100vh;
-  background: url(../img/coverPhoto.jpg) top center;
-  background-size: cover;
+  height: 100vh !important;
+  background: transparent;
   overflow: hidden;
-  position: relative;
-} 
+  position: absolute;
+  z-index: 100;
+}
+
+#intro .timer__container {
+  display: flex;
+  justify-content: center;
+}
+
+#clgName {
+  width: 190% !important;
+  max-width: 100rem;
+}
+
+#antaragniWord {
+  font-family: "Berkshire Swash", cursive !important;
+  font-size: 180px !important;
+}
+
+@media (max-width: 375px) {
+  #antaragniWord {
+    font-family: "Berkshire Swash", cursive !important;
+    font-size: 50px !important;
+  }
+  #intro .day {
+    font-size: 30px !important;
+  }
+  #intro .hour {
+    font-size: 30px !important;
+  }
+  #intro .min {
+    font-size: 30px !important;
+  }
+  #intro .sec {
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 770px) and (min-width: 376px) {
+  #antaragniWord {
+    font-family: "Berkshire Swash", cursive !important;
+    font-size: 75px !important;
+  }
+  #intro .day {
+    font-size: 45px !important;
+  }
+  #intro .hour {
+    font-size: 45px !important;
+  }
+  #intro .min {
+    font-size: 45px !important;
+  }
+  #intro .sec {
+    font-size: 45px !important;
+  }
+}
+
+@media (min-width: 770px) {
+  #antaragniWord {
+    font-family: "Berkshire Swash", cursive !important;
+    font-size: 150px !important;
+  }
+  /* #intro .day {
+    font-size: 45px !important;
+  }
+  #intro .hour {
+    font-size: 45px !important;
+  }
+  #intro .min {
+    font-size: 45px !important;
+  }
+  #intro .sec {
+    font-size: 45px !important;
+  } */
+}
 
 #intro:before {
   content: "";
@@ -522,8 +589,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro p {
   color: #ebebeb;
-  font-weight: 700;
-  font-size: 20px;
 }
 
 #intro .play-btn {
@@ -537,7 +602,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -553,7 +618,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 120px;
   height: 120px;
@@ -582,7 +647,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn:hover::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -655,7 +720,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
- 
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -663,7 +727,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 60px 0 40px 0;
 }
 
-.abtext{
+.abtext {
   color: #000 !important;
 }
 
@@ -692,7 +756,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about p {
-  font-size: 14px;
+  font-size: 22px !important;
   margin-bottom: 20px;
   color: #fff;
 }
@@ -825,7 +889,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #f82249;
+  background-color: #A973BD;
   color: #fff;
 }
 
@@ -837,7 +901,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .tab-pane {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
 #schedule .schedule-item {
@@ -1221,7 +1285,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #buy-tickets .card {
   border: none;
   border-radius: 5px;
-  transition: all  0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
 }
 
@@ -1349,7 +1413,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #f82249;
   display: none;
   /*border: 1px solid red;*/
-   border: 1px solid #f82249;
+  border: 1px solid #f82249;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1667,6 +1731,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-
-
+.Center {
+  justify-content: center;
+  display: flex;
+}
 
