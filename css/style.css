@@ -210,12 +210,12 @@ h6 {
   white-space: nowrap;
 }
 
-.nav-menu>li {
+.nav-menu > li {
   float: left;
 }
 
-.nav-menu li:hover>ul,
-.nav-menu li.sfHover>ul {
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
   display: block;
 }
 
@@ -272,11 +272,11 @@ h6 {
   color: #fff;
 }
 
-.nav-menu>li {
+.nav-menu > li {
   margin-left: 8px;
 }
 
-.nav-menu>li>a:before {
+.nav-menu > li > a:before {
   content: "";
   position: absolute;
   width: 0;
@@ -289,8 +289,8 @@ h6 {
 }
 
 .nav-menu a:hover:before,
-.nav-menu li:hover>a:before,
-.nav-menu .menu-active>a:before {
+.nav-menu li:hover > a:before,
+.nav-menu .menu-active > a:before {
   visibility: visible;
   width: 100%;
 }
@@ -340,7 +340,7 @@ h6 {
   border-radius: 3px;
 }
 
-.nav-menu ul li:hover>a {
+.nav-menu ul li:hover > a {
   background: #f82249;
   color: #fff;
 }
@@ -475,7 +475,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   justify-content: center;
 }
 
-
 #antaragniWord {
   font-family: "Berkshire Swash", cursive !important;
   font-size: 180px !important;
@@ -497,7 +496,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     max-width: 100rem;
   }
 
-  .collegelogo{
+  .collegelogo {
     width: 20vw;
   }
 
@@ -524,7 +523,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 75px !important;
   }
 
-  .collegelogo{
+  .collegelogo {
     width: 20vw;
   }
 
@@ -561,21 +560,21 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 18vh !important;
   }
 
-  #clgName{
+  #clgName {
     height: 14vh !important;
   }
 
-  #letsCeleb{
+  #letsCeleb {
     height: 12vh;
   }
 
-  .collegelogo{
+  .collegelogo {
     height: 15vh !important;
   }
 
-  .marqueClass{
-    color: #ffffff; 
-    width: 80vw
+  .marqueClass {
+    color: #ffffff;
+    width: 80vw;
   }
   #intro .day {
     font-size: 45px !important;
@@ -938,7 +937,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #A973BD;
+  background-color: #a973bd;
   color: #fff;
 }
 
@@ -1666,7 +1665,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (min-width: 768px) {
-
   #contact .contact-address,
   #contact .contact-phone,
   #contact .contact-email {
@@ -1779,7 +1777,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 10px;
   }
 }
-
 
 .Center {
   justify-content: center;
