@@ -87,11 +87,18 @@
             </li>
             <li>
               <a href="about_us.html" style="font-size: 16px !important"
-                >About</a
+                >About GHRCE</a
               >
             </li>
             <li>
               <a href="#speakers" style="font-size: 16px !important">Events</a>
+            </li>
+            <li>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfC7_p8KQdhsya72Qjrfj15Ua4norqiIC2gg0RTqkeme2ExFA/viewform?usp=sf_link"
+                style="font-size: 16px !important"
+                >Register</a
+              >
             </li>
             <li>
               <a href="#schedule" style="font-size: 16px !important"
@@ -100,13 +107,6 @@
             </li>
             <li>
               <a href="#gallery" style="font-size: 16px !important">Gallery</a>
-            </li>
-            <li>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfC7_p8KQdhsya72Qjrfj15Ua4norqiIC2gg0RTqkeme2ExFA/viewform?usp=sf_link"
-                style="font-size: 16px !important"
-                >Register</a
-              >
             </li>
             <li>
               <a href="#contact" style="font-size: 16px !important"
@@ -121,7 +121,7 @@
     <!-- Intro Section -->
     <section id="intro">
       <div class="intro-container wow fadeIn">
-        <img src="img/logo_ghrce.png" style="height: 120px" />
+        <img src="img/logo_ghrce.png" class="collegelogo" />
         <img src="img/collegeName2.png" id="clgName" />
         <p class="mb-2 pb-0" id="antaragniWord">Antaragni</p>
         <!-- <section> -->
@@ -151,32 +151,41 @@
             </div>
           </div>
         </div>
-        <img src="img/letsCeleb.png" id="clgName" />
-        <div
-          class="marqueClass"
-          style="color: #ffffff; padding-top: 60px; width: 80vw"
-        >
+        <img src="img/letsCeleb.png" id="letsCeleb" />
+        <div class="marqueClass" style="color: #ffffff !important">
           <strong>
             <marquee
               behavior=""
               direction=""
               scrolldelay="100"
-              style="font-size: 20px; z-index: 1000"
+              style="font-size: 30px; z-index: 1000"
             >
               Click here to view events &nbsp;
               <a
                 href="Antaragni_Events.html"
-                style="text-decoration: none; margin-right: 20px"
-                >Antragini</a
+                style="
+                  text-decoration: none;
+                  margin-right: 20px;
+                  color: #ffffff !important;
+                "
+                >Antaragini</a
               >
               <a
                 href="Technorian_Events.html"
-                style="text-decoration: none; margin-right: 20px"
+                style="
+                  text-decoration: none;
+                  margin-right: 20px;
+                  color: #ffffff !important;
+                "
                 >Technorion</a
               >
               <a
                 href="Parakram_Events.html"
-                style="text-decoration: none; margin-right: 20px"
+                style="
+                  text-decoration: none;
+                  margin-right: 20px;
+                  color: #ffffff !important;
+                "
                 >Parakram</a
               >
             </marquee>
@@ -194,6 +203,14 @@
     >
       <div class="carousel-inner">
         <div class="carousel-item active" style="height: 100vh">
+          <img
+            src="img/coverpage.png"
+            style="object-fit: cover"
+            class="d-block w-100 h-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" style="height: 100vh">
           <img
             src="img/gallery/img1.jpg"
             style="object-fit: cover; opacity: 0.9; filter: brightness(50%)"
@@ -225,17 +242,7 @@
             alt="..."
           />
         </div>
-        <!-- <div class="carousel-item" style="height:100vh;">
-        <img src="img/gallery/img5.jpg" style="object-fit: cover;opacity: 0.9; filter: brightness(50%);"
-          class="d-block w-100 h-100" alt="...">
-      </div> -->
       </div>
-      <!-- <div class="container">
-      <marquee behavior="" direction="" style="font-size: 20px;">
-        Click here to visit the events   Antragini
-        <a href="Antaragni_Events.html" style="text-decoration: none; margin-right: 20px; color: red;" ></a><a href="Technorian_Events.html" style="text-decoration: none; margin-right: 20px; color: red;" >Technorion</a><a href="Parakram_Events.html" style="text-decoration: none; margin-right: 20px; color: red;" >Parakram</a>
-      </marquee>
-    </div> -->
     </div>
 
     <main id="main">
@@ -244,14 +251,15 @@
       <section id="about">
         <div class="container wow-fadeInUp">
           <h2 class="text-center section-header" style="color: #0e1b4d">
-            About Antaragni
+            About Antaragni <br /><span style="font-size: 20px">
+              Theme - Carnival with Techtoons
+            </span>
           </h2>
           <div class="row">
             <div class="col-lg-6 div-col-md-6 div-col-sm-12">
               <video
                 width="90%"
                 height="auto"
-                controls
                 autoplay
                 muted
                 style="width: 90%; display: block; margin: auto"
@@ -573,6 +581,100 @@
         </div>
       </section>
 
+      <!-- parakram schedule -->
+      <section id="schedule" style="background-color: #ffffff">
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h2>Event Schedule for Parakram</h2>
+            <p>Here is our event schedule</p>
+          </div>
+
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="#day-1-pr"
+                role="tab"
+                data-toggle="tab"
+                >19th Feb</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#day-2-pr" role="tab" data-toggle="tab"
+                >20th Feb</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#day-3-pr" role="tab" data-toggle="tab"
+                >21st Feb</a
+              >
+            </li>
+          </ul>
+
+          <h3 class="sub-heading">Exclusive events, priceless memories</h3>
+
+          <div class="tab-content row justify-content-center">
+            <!-- Schdule Day 1 -->
+            <div
+              role="tabpanel"
+              class="col-lg-9 tab-pane fade show active"
+              id="day-1-pr"
+            >
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>Venue - UG Ravi Nagar</time></div>
+                <div class="col-md-10">
+                  <h4>
+                    <ul>
+                      <li>Badminton</li>
+                      <li>Kho-Kho</li>
+                      <li>Kabbadi</li>
+                      <li>Volleyball</li>
+                      <li>Handball</li>
+                      <li>Athletics</li>
+                    </ul>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- End Schdule Day 1 -->
+
+            <!-- Schdule Day 2 -->
+            <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-2-pr">
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>Venue - SERC</time></div>
+                <div class="col-md-10">
+                  <h4>
+                    <ul>
+                      <li>Football (UG - Boys)</li>
+                    </ul>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- End Schdule Day 2 -->
+
+            <!-- Schdule Day 3 -->
+            <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-3-pr">
+              <div class="row schedule-item">
+                <div class="col-md-2"><time>Venue - Sharrddha Park</time></div>
+                <div class="col-md-10">
+                  <h4>
+                    <ul>
+                      <li>Basketball</li>
+                      <li>Dodgeball</li>
+                      <li>Cricket</li>
+                      <li>Tug-Of-war</li>
+                      <li>Sepak Takraw</li>
+                      <li>Futsal (W)</li>
+                    </ul>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Gallery Section -->
       <section
         id="gallery"
@@ -581,7 +683,7 @@
       >
         <div class="container">
           <div class="section-header">
-            <h2>Gallery</h2>
+            <h2>Gallery - Glimspses 2022</h2>
             <p>Check our gallery from the recent events</p>
           </div>
         </div>
